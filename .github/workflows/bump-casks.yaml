@@ -7,7 +7,7 @@ jobs:
   bump-casks-versions:
     runs-on: macos-latest
     steps:
-      - uses: macauley/action-homebrew-bump-cask@v1
+      - uses: macauley/action-homebrew-bump-cask@445c42390d790569d938f9068d01af39ca030feb # v1
         with:
           token: ${{secrets.BUMP_CASK_TOKEN}}
           tap: 9numbernine9/homebrew
