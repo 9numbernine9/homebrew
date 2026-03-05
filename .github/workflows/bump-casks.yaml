@@ -10,5 +10,6 @@ jobs:
       - uses: friesi23/action-homebrew-bump-cask@561bbe447f8915a50a62e65483061bea1e7f136f # v2
         with:
           token: ${{secrets.BUMP_CASK_TOKEN}}
-          tap: "9numbernine9/homebrew https://github.com/9numbernine9/homebrew.git"
+          tap: 9numbernine9/homebrew
+          tap_url: https://github.com/9numbernine9/homebrew.git
           livecheck: true
