@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   bump-aonsoku-cask-versions:
+    runs-on: ubuntu-latest
     steps:
       - uses: friesi23/action-homebrew-bump-cask@561bbe447f8915a50a62e65483061bea1e7f136f # v2
         with:
