@@ -13,4 +13,5 @@ jobs:
           HOMEBREW_BUMP_TAP_URL: "https://github.com/9numbernine9/homebrew.git"
         with:
           token: ${{secrets.BUMP_CASK_TOKEN}}
+          tap: 9numbernine9/homebrew
           livecheck: true
