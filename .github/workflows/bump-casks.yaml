@@ -8,8 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: friesi23/action-homebrew-bump-cask@561bbe447f8915a50a62e65483061bea1e7f136f # v2
+        env:
+          HOMEBREW_BUMP_TAP: "9numbernine9/homebrew"
+          HOMEBREW_BUMP_TAP_URL: "https://github.com/9numbernine9/homebrew.git"
         with:
           token: ${{secrets.BUMP_CASK_TOKEN}}
-          tap: 9numbernine9/homebrew
-          tap_url: https://github.com/9numbernine9/homebrew.git
           livecheck: true
