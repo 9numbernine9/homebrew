@@ -1,0 +1,14 @@
+name: Bump Casks
+on:
+  schedule:
+    - cron: '0 4,16 * * *'
+  workflow_dispatch:
+jobs:
+  bump-casks-versions:
+    runs-on: macos-latest
+    steps:
+      - uses: macauley/action-homebrew-bump-cask@v1
+        with:
+          token: ${{secrets.BUMP_CASK_TOKEN}}
+          tap: 9numbernine9/homebrew
+          livecheck: true
