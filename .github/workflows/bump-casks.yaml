@@ -4,11 +4,11 @@ on:
     - cron: '0 4,16 * * *'
   workflow_dispatch:
 jobs:
-  bump-casks-versions:
-    runs-on: macos-latest
+  bump-aonsoku-cask-versions:
     steps:
-      - uses: Friesl23/action-homebrew-bump-cask@v2
+      - uses: friesi23/action-homebrew-bump-cask@v2
         with:
           token: ${{secrets.BUMP_CASK_TOKEN}}
           tap: 9numbernine9/homebrew
+          cask: aonsoku
           livecheck: true
