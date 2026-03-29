@@ -4,7 +4,7 @@ cask "aonsoku" do
   version "0.13.0"
 
   sha256 arm: "5107a0e76cbc6a83bea86e05a73dca75d0bd829a9dbee60f11c737739cc5f3d5",
-         intel: "8bece4d6674449f4e3be2ee00203a04cf9a1fb6949940e38237f99571a2c4245"
+         intel: "b96f36c39513d00ae5f54e25b347115c4ae73304638ca7a7dbb6361ae3baf245"
 
   url "https://github.com/victoralvesf/aonsoku/releases/download/v#{version}/Aonsoku-v#{version}-mac-#{arch}.dmg",
       verified: "github.com/victoralvesf/aonsoku/"
