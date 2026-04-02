@@ -1,10 +1,10 @@
 cask "aonsoku" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.13.0"
+  version "0.14.0"
 
-  sha256 arm: "5107a0e76cbc6a83bea86e05a73dca75d0bd829a9dbee60f11c737739cc5f3d5",
-         intel: "b96f36c39513d00ae5f54e25b347115c4ae73304638ca7a7dbb6361ae3baf245"
+  sha256 arm: "ad4e7eb62e8d30b708e6e24f15ded1fd9188c67771773b420d97988d5778725f",
+         intel: "028783a5f3756fe09414436e415e65af9576fd861d1e2cacfc6c91c2798dd397"
 
   url "https://github.com/victoralvesf/aonsoku/releases/download/v#{version}/Aonsoku-v#{version}-mac-#{arch}.dmg",
       verified: "github.com/victoralvesf/aonsoku/"
